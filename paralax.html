@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <title>JS</title>   
+         <link rel="stylesheet" type="text/css" href="paralax.css">
+         <link rel="icon" type="image/ico" href = "cat.ico">
+          <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    </head>
+    <body>
+       
+       <header>
+           <h1 class="animate__animated animate__fadeInDown"><a href="#top">WELCOME</a></h1>
+            <ul class="start">
+                <li>
+                    <ul class= "menu">
+                    <li class = "menu-item">
+                        <a href="#">МЕНЮ</a>
+                        <ul class="sub-menu">
+                            <li class="for-menu"><a href="paralax.html">Главная</a></li>
+                            <li class="for-menu"><a href="Form.html">Войти</a></li>
+                            <li class="for-menu"><a href="https://www.free-stock-music.com/lo-fi.html" target="_blank">Сайт с музыкой</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li class="input"><a href="Form.html">ВОЙТИ</a>   
+                </li>
+            </ul>
+            </header>
+            
+            <script>
+            var el = document.getElementsByClassName('menu-item')
+            for(var i = 0; i<el.length; i++){
+                el[i].addEventListener('mouseenter', showSub, false); /* при наведении мыши */ 
+                el[i].addEventListener('mouseleave', hideSub, false); /* при уходе мыши */
+            }
+            function showSub(){
+                if(this.children.length>1){ /* если в текущего элемента потомков больше одного */
+                    this.children[1].style.height = "auto";
+                    this.children[1].style.opacity = "1";
+                    this.children[1].style.overflow = "visible";
+                }
+                else {
+                    return false;
+                }
+            }
+            
+            function hideSub(){
+                if(this.children.length>1){ /* если в текущего элемента потомков больше одного */
+                    this.children[1].style.height = "0";
+                    this.children[1].style.opacity = "0";
+                    this.children[1].style.overflow = "hidden";
+                }
+                else {
+                    return false;
+                }
+            }
+        </script>
+            
+       
+       
+        <div class="sun">
+          <div class="layer" id="layer-1" data-speed="0"></div>
+          <div class="layer" id="layer-2" data-speed="30"></div>
+          <div class="layer" id="layer-3" data-speed="50"></div>
+          <div class="layer" id="layer-4" data-speed="100"></div>
+        </div>
+        
+        
+        <div class="maincontent">
+        
+        <div class="music">
+             <audio controls>
+              <source src="purrple-cat-equinox.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает аудио
+             </audio>
+        </div> 
+           
+        
+        <div class="center">
+          
+           <div class="text">
+           <h2>Lo-Fi</h2>
+           <p><img class="img-text-r" src="https://www.musikexpress.de/wp-content/uploads/2019/12/17/08/purrple-cat-nostalgia-and-moving-on-1024x1024.jpg" alt="Иллюстрация">Lo-Fi хаус стал одним из главных явлений в мире электронной музыки последних нескольких лет. Цифровая революция 90-х годов повлияла на многие аспекты электронной музыкальной культуры. Переход от аналога к цифре изменил звучание и подход к написанию музыки, вынудив основных игроков индустрии соревноваться за самое чистое звучание. В это время появляется эстетика под названием "Lo-Fi" — реакция на чрезмерно-«Hi-Fi» записи, чья нечестная культура стала инструментом маркетологов, и направлена на коммерциализацию музыки в целом.</p>
+            <p><img class="img-text-l" src="maxresdefault%20(1).jpg" alt="Иллюстрация">Один из крестных отцов хауса Фрэнки Наклз (Frankie Knuckles) записывал свои первые диджейские наработки на кассеты. Однако термин "lo-fi house" стал широко распространяться только в 2015-м году, в качестве описания кучки молодых хаус-продюсеров, чьи записи начали резко распространяться. Многие из них, намерено придумывали себе довольно глупые имена, играя на абсурдности своего творчества. В попытке закосить под ретро, они сильно искажали свою музыку, играя с шумами и помехами в противовес мейнстримной вычурности (грязное звучание в противовес чистому). В большинстве случаев, треки в этом стиле предназначены для прослушивания через наушники, а не посредством мощных аудиосистем.</p>
+            
+            
+            
+            <div class="slider">
+                <div class="slider__wrapper">
+                  <div class="slider__item">
+                   <img src="https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg" class="img-slide">
+                  </div>
+                  <div class="slider__item">
+                    <img src="https://pbs.twimg.com/profile_images/1236063452923297792/b-1lcewe_400x400.jpg" class="img-slide">
+                  </div>
+                  <div class="slider__item">
+                    <img src="https://cdn.shopify.com/s/files/1/0784/1629/products/Bedroom-Beats-and-Lofi-Hip-Hop-II-Cover-min_1024x1024.png?v=1553679762" class="img-slide">
+                  </div>
+                  <div class="slider__item">
+                    <img src="https://cdn-images-1.listennotes.com/podcasts/bamf-radio-lofi/night-walks-lofi-hiphop-mix-mAUblY5MIsO-2opr6hAWcHu.1400x1400.jpg" class="img-slide">
+                  </div>
+                  <div class="slider__item">
+                    <img src="https://i.ytimg.com/vi/QltODNFwp20/mqdefault.jpg" class="img-slide">
+                  </div>
+                  <div class="slider__item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqeLKXJMVWFqSf28gTPeRozv71x7MBTlgYO7Bex0-sgS-YK5hsQ&s" class="img-slide">
+                  </div>
+                </div>
+                <a class="slider__control slider__control_left" href="#" role="button"></a>
+                <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+            </div>
+            
+            <p>Еще недавно данный стиль оставался по большей части исключительно интернет-феноменом, чей круг почитателей ограничивается несколькими тысячами подписчиков Facebook-сообществ, а также различных тематических плейлистов на YouTube и SoundCloud. Однако ситуация быстро меняется, и жанр стремительно вливается в область интересов известных лэйблов и клубных заведений.
+            </p>
+            
+            </div>
+            <div class = "to-top"><a href="#top"><img src="to-top.png" id="img-to-top"></a></div>
+              
+        </div>
+        
+            
+        </div>
+        
+        <footer>
+          <a href="https://themarket.io/blog/pages/2392145" target="_blank" class="foot">Источник</a>
+          Контакты:<a href="https://vk.com/poly.pepelinka" target="_blank" class="foot">VK</a>
+          <a href="https://mail.google.com/mail/u/1/?pli=1#inbox" target="_blank" class="foot">poly.ribina@gmail.com</a>
+        </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function() {
+            window.addEventListener("scroll", function(event){
+
+            var top = this.pageYOffset;
+            var layers = $(".layer");
+            var layer, speed, yPos;
+            layers.each(function() {
+                speed = $(this).attr('data-speed');
+                var yPos = -(top * speed / 100);
+                $(this).attr('style','transform: translate3d(0px, ' + yPos + 'px, 0px)');
+            });
+            });
+        });
+    </script>
+    
+    <script>
+            var multiItemSlider = (function () {
+            return function (selector, config) {
+                var
+          _mainElement = document.querySelector(selector), // основный элемент блока, возвращает элемент с заданным селектором
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item), возвращает все элементы по селектору
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента, возвращает объект, содержащий значения всех CSS свойств элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') { //Если вправо
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) { //Если мы у самого правого края, вернуть
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) { //Если были у левого края, то теперь можно нажимать влево
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show'); //Если мы у самого правого края, то убираем возможность нажимать вправо
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider')
+
+  </script>
+    
+    
+    </body>
+</html>
